@@ -1,0 +1,136 @@
+// ---------slider ---------------
+
+.slider .slick-list {
+  overflow: hidden;
+}
+.slider .slick-dots {
+  overflow: hidden;
+  display: flex;
+  padding: 0;
+  margin-left: 247px;
+  margin-top: 43px;
+}
+.slider .slick-dots li {
+  list-style: none;
+  margin-right: 5px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.slider .slick-dots button {
+  outline: none;
+  background-color: transparent;
+  border: 0;
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #d0d0d0;
+  border-radius: 50%;
+}
+
+.slider .slick-dots li.slick-active button {
+  background-color: #71f6eb;
+}
+
+// ---------sliderTes ---------------
+
+.sliderTes .slick-slider {
+  display: flex;
+}
+
+.sliderTes .slick-list {
+  position: relative;
+  overflow: hidden;
+}
+
+.sliderTes .slick-dots {
+  overflow: hidden;
+  display: flex;
+  padding: 0;
+  margin-left: 247px;
+  margin-top: 43px;
+}
+.sliderTes .slick-dots li {
+  list-style: none;
+  margin-right: 5px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.sliderTes .slick-dots button {
+  padding: 5px;
+  outline: none;
+  background-color: transparent;
+  border: 0;
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #d0d0d0;
+  border-radius: 50%;
+}
+
+.sliderTes .slick-dots li.slick-active button {
+  background-color: #71f6eb;
+}
+
+/* Стрелка влево */
+.sliderTes .slick-arrow.slick-prev {
+  box-shadow: 0 0 10px #eaebed;
+  position: absolute;
+  bottom: 0;
+  right: 80px;
+
+  border: 0;
+  border-radius: 5px;
+  font-size: 0;
+
+  background: #71f6eb;
+
+  width: 55px;
+  height: 55px;
+  margin-right: 15px;
+  outline: none;
+
+  &::before {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-image: url('../image/left-arrow\ \(1\).svg');
+  }
+}
+
+/* Стрелка вправо */
+.sliderTes .slick-arrow.slick-next {
+  box-shadow: 0 0 10px #eaebed;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 5px;
+  border: 0;
+  border-radius: 5px;
+  font-size: 0;
+  background: #71f6eb;
+  width: 55px;
+  height: 55px;
+  outline: none;
+
+  &::before {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-image: url('../image/right-arrow\ \(1\).svg');
+  }
+}
+/* Стрелка не активная */
+.sliderTes .slick-arrow.slick-disabled {
+  box-shadow: 0 0 10px #eaebed;
+  opacity: 0.2;
+
+  background-color: white;
+}

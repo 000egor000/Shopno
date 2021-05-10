@@ -1,0 +1,41 @@
+.header {
+  padding: 20px 0;
+  width: 100%;
+  background-color: #eff0f2;
+  z-index: 1000;
+}
+
+.header.fixed {
+  position: fixed;
+  z-index: 3;
+  height: auto;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  display: block;
+}
+.nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  transition: 0.2s linear;
+  &:hover {
+    color: #2d736e;
+    border-left: 2px solid;
+    border-right: 2px solid;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.nav,
+.nav.active {
+  overflow: auto;
+}
